@@ -89,10 +89,9 @@ while not game_over:
         elif i in correct_letters:
             display += i
         else:
-            print("Wrong")
             display += "_"
     print(display)
-    if i not in chosen_word:
+    if user_word not in chosen_word:
         lives -= 1
         if lives == 0:
          game_over = True
